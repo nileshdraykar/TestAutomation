@@ -14,6 +14,7 @@
 		FA9319CC2511CB48000D6F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9319CB2511CB48000D6F52 /* Assets.xcassets */; };
 		FA9319CF2511CB48000D6F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9319CD2511CB48000D6F52 /* LaunchScreen.storyboard */; };
 		FA9319D22511CB48000D6F52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9319D12511CB48000D6F52 /* main.m */; };
+		FA9319DB2511E5C4000D6F52 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA9319DA2511E5C4000D6F52 /* exportOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FA9319CE2511CB48000D6F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9319D02511CB48000D6F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9319D12511CB48000D6F52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA9319DA2511E5C4000D6F52 /* exportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		FA9319BE2511CB44000D6F52 /* TestAutomation */ = {
 			isa = PBXGroup;
 			children = (
+				FA9319DA2511E5C4000D6F52 /* exportOptions.plist */,
 				FA9319BF2511CB44000D6F52 /* AppDelegate.h */,
 				FA9319C02511CB44000D6F52 /* AppDelegate.m */,
 				FA9319C22511CB44000D6F52 /* SceneDelegate.h */,
@@ -136,6 +139,7 @@
 				FA9319CF2511CB48000D6F52 /* LaunchScreen.storyboard in Resources */,
 				FA9319CC2511CB48000D6F52 /* Assets.xcassets in Resources */,
 				FA9319CA2511CB44000D6F52 /* Main.storyboard in Resources */,
+				FA9319DB2511E5C4000D6F52 /* exportOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,15 +293,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YATC49JZKB;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Whiz Technologies Inc. (98FT28U9N2)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 98FT28U9N2;
 				INFOPLIST_FILE = TestAutomation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nilesh.TestAutomation;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiz.megaconference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "MegaConference Appstore Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,15 +313,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YATC49JZKB;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Whiz Technologies Inc. (98FT28U9N2)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 98FT28U9N2;
 				INFOPLIST_FILE = TestAutomation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nilesh.TestAutomation;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiz.megaconference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "MegaConference Appstore Profile";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
