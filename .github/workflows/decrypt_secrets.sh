@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eo pipefail
-
+set -e
 gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/MegaConference_Appstore_Profile.mobileprovision.mobileprovision ./.github/secrets/MegaConference_Appstore_Profile.mobileprovision.gpg
 gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/secrets/Whiz_Distribution_Certificate_And_Key.p12 ./.github/secrets/Whiz_Distribution_Certificate_And_Key.p12.gpg
 
@@ -10,7 +10,7 @@ cp ./.github/secrets/MegaConference_Appstore_Profile.mobileprovision.mobileprovi
 
 
 security create-keychain -p "" build.keychain
-security import ./.github/secrets/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k ~/Library/Keychains/build.keychain -P "123456789" -A
+security import ./.github/secrets/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k ~/Library/Keychains/build.keychain -P "nilesh123" -A
 
 security list-keychains -s ~/Library/Keychains/build.keychain
 security default-keychain -s ~/Library/Keychains/build.keychain
