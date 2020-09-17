@@ -9,7 +9,7 @@ provisioning_folder="$lib_folder/MobileDevice/Provisioning Profiles"
 mkdir -p $lib_folder
 mkdir -p $provisioning_folder
 
-cp ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision "$provisioning_folder/MegaConference_Appstore_Profile.mobileprovision
+cp ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision "$provisioning_folder/MegaConference_Appstore_Profile.mobileprovision"
 
 
 security create-keychain -p "" build.keychain
