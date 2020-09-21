@@ -18,12 +18,12 @@ ls "$provisioning_folder"
 cp ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision "$provisioning_folder/MegaConference_Appstore_Profile.mobileprovision"
 
 
-security create-keychain -p "nilesh123" build.keychain
-security import ./.github/workflows/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k $lib_folder/Keychains/build.keychain -P "nilesh123" -A
+# security create-keychain -p "nilesh123" build.keychain
+# security import ./.github/workflows/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k $lib_folder/Keychains/build.keychain -P "nilesh123" -A
 
-security list-keychains -s $lib_folder/Keychains/build.keychain
-security default-keychain -s $lib_folder/Keychains/build.keychain
-security unlock-keychain -p "nilesh123" $lib_folder/Keychains/build.keychain
+# security list-keychains -s $lib_folder/Keychains/build.keychain
+# security default-keychain -s $lib_folder/Keychains/build.keychain
+# security unlock-keychain -p "nilesh123" $lib_folder/Keychains/build.keychain
 
-security set-key-partition-list -S apple-tool:,apple: -s -k "" $lib_folder/Keychains/build.keychain
+# security set-key-partition-list -S apple-tool:,apple: -s -k "" $lib_folder/Keychains/build.keychain
 
