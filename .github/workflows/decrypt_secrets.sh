@@ -14,12 +14,12 @@ lib_folder="./.github/library"
 provisioning_folder="$lib_folder/MobileDevice/Provisioning Profiles"
 mkdir -p "$lib_folder"
 mkdir -p "$provisioning_folder"
-ls "$provisioning_folder"
+ls $provisioning_folder
 cp ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision "$provisioning_folder/MegaConference_Appstore_Profile.mobileprovision"
 
 
 security create-keychain -p "" build.keychain
-security import ./.github/settings/secrets/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k $lib_folder/Keychains/build.keychain -P "" -A
+security import ./.github/workflows/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k $lib_folder/Keychains/build.keychain -P "" -A
 
 security list-keychains -s $lib_folder/Keychains/build.keychain
 security default-keychain -s $lib_folder/Keychains/build.keychain
