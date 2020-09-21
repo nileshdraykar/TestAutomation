@@ -12,8 +12,8 @@ gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/
 # mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 lib_folder="./.github/library"
 provisioning_folder="$lib_folder/MobileDevice/Provisioning Profiles"
-mkdir -p $lib_folder
-mkdir -p $provisioning_folder
+mkdir -p "$lib_folder"
+mkdir -p "$provisioning_folder"
 ls $provisioning_folder
 cp ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision "$provisioning_folder/MegaConference_Appstore_Profile.mobileprovision"
 
