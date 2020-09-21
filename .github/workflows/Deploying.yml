@@ -20,7 +20,7 @@ jobs:
       - name: Archiving project
         env:
           PR_NUMBER: $(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
-        run: ./.github/workflows/archive_app.sh
+        run: chmod +x ./.github/workflows/archive_app.sh
       - name: Exporting .ipa
         run: ./.github/workflows/export_ipa.sh
       - name: Publishing app
