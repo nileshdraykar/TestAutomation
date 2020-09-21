@@ -3,7 +3,7 @@ set -eo pipefail
 # gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision.gpg
 # gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/workflows/Whiz_Distribution_Certificate_And_Key.p12 ./.github/workflows/Whiz_Distribution_Certificate_And_Key.p12.gpg
 
-gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/settings/secrets/MegaConference_Appstore_Profile.mobileprovision ./.github/settings/secrets/MegaConference_Appstore_Profile.mobileprovision.gpg
+gpg --quiet --batch --yes --decrypt --passphrase="$MEGACONFERENCE_APPSTORE_PROFILE" --output ./.github/settings/secrets/MegaConference_Appstore_Profile.mobileprovision ./.github/settings/secrets/MegaConference_Appstore_Profile.mobileprovision.gpg
 gpg --quiet --batch --yes --decrypt --passphrase="$IOS_KEYS" --output ./.github/settings/secrets/Whiz_Distribution_Certificate_And_Key.p12 ./.github/settings/secrets/Whiz_Distribution_Certificate_And_Key.p12.gpg
 
 
