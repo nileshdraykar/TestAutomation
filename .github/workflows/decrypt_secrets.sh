@@ -19,7 +19,7 @@ cp ./.github/workflows/MegaConference_Appstore_Profile.mobileprovision "$provisi
 
 
 security create-keychain -p "" build.keychain
-security import ./.github/workflows/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k $lib_folder/Keychains/build.keychain -P "" -A
+security import ./.github/workflows/Whiz_Distribution_Certificate_And_Key.p12 -t agg -k $lib_folder/Keychains/build.keychain -P "nilesh123" -A
 
 security list-keychains -s $lib_folder/Keychains/build.keychain
 security default-keychain -s $lib_folder/Keychains/build.keychain
